@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* navigation */
+
+.nav-container{
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 4%;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  
+  nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 40px;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 4px solid rgb(0, 0, 0);
+    padding-bottom: 8px;
+  }
+
+  #site-map {
+    border-bottom: 4px solid rgb(0, 0, 0);
+    padding-bottom: 8px;
+  }
+
+  body{
+    background-image:url('../../img/student4/backgrounds/sitemap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+
+  }
+
+
+
+  /* svg styling part */
+#svg{
+    display:block;
+    text-align: center;
+    margin:auto;
+}
+#group0:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sitemap:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+circle,path{
+  filter: drop-shadow(4px 4px 2px rgba(16, 0, 0, 0.5));
+}
+
+ /* footer */
+.container-footer {
+    background-color:#333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+  
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.col-footer {
+    flex-basis: 33%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+  
+  .col-footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .col-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  .col-footer li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .col-footer p {
+    font-size: 16px;
+  }
+  
+  .container-footer a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .copyright{
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .copyright hr {
+    margin: 10px 20px 10px 20px;
+    color: #ffffff7c;
+  }

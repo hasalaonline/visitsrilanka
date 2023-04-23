@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/student1/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="nav-container">
+        <div class="navbar">
+          <img src="img/logo/logo.png" class="logo" alt="logo">
+          <nav>
+            <ul>
+              <li>
+                <a href="home.html">HOME</a>
+              </li>
+              <li>
+                <a href="gallery.html">GALLERY</a>
+              </li>
+              <li>
+                <a href="shop.html" id="shop">SHOP</a>
+              </li>
+              <li>
+                <a href="site-map.html">SITE MAP</a>
+              </li>
+              <li>
+                <a href="quiz.html">QUIZ</a>
+              </li>
+              <li>
+                <a href="feedback.html">FEEDBACK</a>
+              </li>
+              <li>
+                <a href="about-us.html">ABOUT US</a>
+              </li>
+            </ul>
+          </nav>
+          <img src="img/student1/icons/cart.png" alt="cart-icon" id="cart-icon">
+        </div>
+      </div>
+      <hr id="header-hr">
+
+      <!-- cart  -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- cart content  -->
+        <div class="cart-content"></div>
+        <!-- total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- buy button  -->
+        <button type="button" id="popup-btn" class="btn-buy">Buy Now</button>
+        <!-- cart close -->
+        <img src="img/student1/icons/close.png" class="close-cart" alt="">
+      </div>
+
+      <!-- checkout -->
+      <div id="overlay">
+        <div id="popup">
+          <h3>Checkout</h3>
+          <img src="img/student1/icons/close.png" class="close-cart" id="close-btn" alt="">
+          <hr>
+          <br>
+          <form id="purchase-form">
+            <div class="form-group">
+              <label for="name">
+                <i class="fa fa-user"></i> Full Name </label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="address">
+                <i class="fa fa-address-card-o"></i> Address </label>
+              <input type="text" id="address" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <p id="delivery-charge">Delivery Charge: $10.00</p>
+            </div>
+            <div class="form-group">
+              <p id="invoice-total"></p>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="purchase-btn">Proceed</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- payment -->
+
+      <div id="payment-overlay">
+        <div id="payment-popup">
+          <h2>Order Summery</h2>
+          <br>
+          <hr>
+          <br>
+          <p id="payment-name"></p>
+          <p id="payment-email"></p>
+          <p id="payment-address"></p>
+          <p id="payment-phone"></p>
+          <br>
+          <h2>Payment</h2>
+          <br>
+          <hr>
+          <br>
+          <form action="payment-form" id="payment-form">
+            <div class="form-group">
+              <p id="cardLbl">Accepted Cards</p>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="card">Card Number</label>
+              <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required id="card">
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV:</label>
+              <input type="password" placeholder="XXX" id="cvv" required>
+            </div>
+            <div class="form-group">
+              <button id="back-btn">Back</button>
+              <button type="submit" id="payment-btn">Proceed</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+        <!-- order confirmation overlay -->
+        <div id="purchase-overlay">
+          <div id="purchase-popup">
+            <h2>Are you sure you want to make this purchase?</h2>
+            <br>
+            <button id="purchase-confirm-btn">Confirm</button>
+            <button id="purchase-cancel-btn">Cancel</button>
+          </div>
+        </div>
+
+        <!-- invoice -->
+        <div id="invoice-overlay">
+          <div id="invoice-popup">
+            <h2>Invoice</h2>
+            <img src="img/logo/logo.png" alt="logo">
+            <br><br><hr>
+            <p id="invoice-name"></p>
+            <p id="invoice-email"></p>
+            <p id="invoice-address"></p>
+            <p id="invoice-phone"></p>
+            <p id="invoice-delivery-charge"></p>
+            <hr>
+            <p id="invoiceTotal"></p>
+            <br>
+            <p class="invoice-title">Thank you for purchasing!</p>
+            <button id="invoice-close-btn">&#10004;</button>
+          </div>
+        </div>
+    </header>
+
+    <!-- products  -->
+    <section class="shop container">
+      <div class="shop-content">
+        <div class="product-box">
+          <img src="img/student1/products/product-1.jpg" alt="Handmade Containers" class="product-img">
+          <h2 class="product-title">Handmade Containers</h2>
+          <br>
+          <span class="price">$100</span>
+          <button class="add-cart">+</button>
+        </div>
+        <div class="product-box">
+          <img src="img/student1/products/product-2.jpg" alt="Handmade Key Tag" class="product-img">
+          <h2 class="product-title">Handmade Key Tag</h2>
+          <br>
+          <span class="price">$20</span>
+          <button class="add-cart">+</button>
+        </div>
+        <div class="product-box">
+          <img src="img/student1/products/product-3.jpg" alt="Traditional Mask" class="product-img">
+          <h2 class="product-title">Traditional Mask</h2>
+          <br>
+          <span class="price">$160</span>
+          <button class="add-cart">+</button>
+        </div>
+        <div class="product-box">
+          <img src="img/student1/products/product-4.jpg" alt="Wooden Wall Craft" class="product-img">
+          <h2 class="product-title">Wooden Wall Craft</h2>
+          <br>
+          <span class="price">$200</span>
+          <button class="add-cart">+</button>
+        </div>
+        <div class="product-box">
+          <img src="img/student1/products/product-5.jpg" alt="Throw Pillow Case" class="product-img">
+          <h2 class="product-title">Throw Pillow Case</h2>
+          <br>
+          <span class="price">$40</span>
+          <button class="add-cart">+</button>
+        </div>
+        <div class="product-box">
+          <img src="img/student1/products/product-6.jpg" alt="Traditional Mask" class="product-img">
+          <h2 class="product-title">Blue Traditional Mask</h2>
+          <br>
+          <span class="price">$100</span>
+          <button class="add-cart">+</button>
+        </div>
+        <div class="product-box">
+          <img src="img/student1/products/product-7.jpg" alt="Handmade Red Bag" class="product-img">
+          <h2 class="product-title">Handmade Red Bag</h2>
+          <br>
+          <span class="price">$25</span>
+          <button class="add-cart">+</button>
+        </div>
+        <div class="product-box">
+          <img src="img/student1/products/product-8.jpg" alt="Handmade Bag" class="product-img">
+          <h2 class="product-title">Handmade Bag</h2>
+          <br>
+          <span class="price">$85</span>
+          <button class="add-cart">+</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="col-footer">
+            <h3>About Us</h3>
+            <p>Welcome to our website! We are passionate about helping travelers discover the beauty and culture of Sri Lanka. Our team of travel experts has years of experience in the industry, and we work tirelessly to curate the best travel experiences for our customers. Whether you're a solo traveler or planning a family vacation, we're here to make your travel dreams a reality.</p>
+          </div>
+          <div class="col-footer">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-footer">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka
+              </li>
+              <li>
+                <i class="fas fa-phone"></i> 555-555-5555
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i> info@visitsrilanka.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr>
+          <p>Created By <a href="hasala-abhilasha.html">Hasala Abhilasha</a> | © 2023 All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/student1/shop.js"></script>
+  </body>
+</html>

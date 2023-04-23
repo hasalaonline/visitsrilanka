@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  /* setting html page height to screen fit */
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  /* adding some styles to hole body of the page  */
+  
+  body {
+    background-image: url("../../img/student1/backgrounds/splashback.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+  
+  /* set image size and set it to centre  */
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 200px;
+  }
+  
+  /* displaying welcome message with an CSS animation  */
+  
+  .welcome {
+    text-align: center;
+    font-size: 71px;
+    font-weight: 800;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0e4111, #48be19, #083d11);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
+  /* display the details of all members of group */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 58px 100px;
+    color: rgba(0, 0, 0, 0.712);
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.342);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.315);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+  }
+  
+  .uow {
+    font-size: 22px;
+  }
+  
+  /* footer section  */
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+  }  
+
+
+
+
+/* CSS for the footer section */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+/* CSS for the copyright information */
+footer p {
+  margin: 0;
+  padding: 20px;
+}
+
+/* CSS for the horizontal line */
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  margin: 0;
+}

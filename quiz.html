@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/student3/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+<body>
+  <div class="nav-container">
+    <div class="navbar">
+      <img src="img/logo/logo.png" class="logo" alt="logo">
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html">HOME</a>
+          </li>
+          <li>
+            <a href="gallery.html">GALLERY</a>
+          </li>
+          <li>
+            <a href="shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="site-map.html">SITE MAP</a>
+          </li>
+          <li>
+            <a href="quiz.html" id="quiz">QUIZ</a>
+          </li>
+          <li>
+            <a href="feedback.html">FEEDBACK</a>
+          </li>
+          <li>
+            <a href="about-us.html">ABOUT US</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+    <div class="background-image"></div>
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Instructions for the Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. The quiz should consist of 10 questions.</div>
+            <div class="info">2. You will have only <span>1 minute</span> per each question.</div>
+            <div class="info">3. You will get 2 marks for each correct answer.</div>
+            <div class="info">4. You will loss 1 marks for each wrong answer.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Vist Sri Lanka</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">60</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Question method from Javascript -->
+            </div>
+            <div class="option_list">
+                <!-- quiz options through Javascript -->
+            </div>
+        </section>
+
+        <!-- Footer for Quizbox -->
+        <footer>
+            <div class="total_que">
+                <!-- question numbers through Javascipt -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <!--<div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>-->
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz questions through Javascipt -->
+    <script src="js/student3/quizQuestions.js"></script>
+
+    <!-- Quiz methods & options will be added through Javascipt  -->
+    <script src="js/student3/quizHandling.js"></script>
+
+
+    <footer>
+		        <div class="container-footer">
+            <div class="copyright">
+                <p><a href="quizexplaination.html">Get Explanation </a>| Created By <a href="lakindu-naveesha.html">Lakindu Kaluarachchi</a> | © 2023 All Rights Reserved By Team R6</p>
+            </div>
+            </div>
+	  </footer>
+</body>
+</html>

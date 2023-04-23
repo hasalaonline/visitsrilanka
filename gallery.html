@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/student4/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="navbar">
+          <img src="img/logo/logo.png" class="logo" alt="logo">
+          <nav>
+            <ul>
+              <li>
+                <a href="home.html">HOME</a>
+              </li>
+              <li>
+                <a href="gallery.html" id="gallery">GALLERY</a>
+              </li>
+              <li>
+                <a href="shop.html">SHOP</a>
+              </li>
+              <li>
+                <a href="site-map.html">SITE MAP</a>
+              </li>
+              <li>
+                <a href="quiz.html">QUIZ</a>
+              </li>
+              <li>
+                <a href="feedback.html">FEEDBACK</a>
+              </li>
+              <li>
+                <a href="about-us.html">ABOUT US</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+     <!-- Slideshow html begin here -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="container">
+
+            <!-- Slide show images -->
+            <div class="mySlides">
+                <img class="slideshow-imges" src="img/student4/slideshow/1.jpg" alt="slide img 1">
+            </div>
+
+            <div class="mySlides">
+                <img class="slideshow-imges" src="img/student4/slideshow/2.jpg" alt="slide img 2" >
+            </div>
+
+            <div class="mySlides">
+                <img class="slideshow-imges" src="img/student4/slideshow/3.jpg" alt="slide img 3" >
+            </div>
+
+            <div class="mySlides">
+                <img class="slideshow-imges" src="img/student4/slideshow/4.jpg" alt="slide img 4" >
+            </div>
+
+            <div class="mySlides">
+                <img class="slideshow-imges" src="img/student4/slideshow/5.jpg" alt="slide img 5" >
+            </div>
+
+            <!-- text in center of slideshow -->
+            <div class="centered">Gallery</div>
+        </div>
+    </div>
+    <br>
+
+    <!-- font size changing button -->
+    <div class="fontsize-container">
+        <div class="buttons">
+            <span class="btn" onclick="document.getElementById('text').style.fontSize='1em'">A</span>
+            <span class="btn active" onclick="document.getElementById('text').style.fontSize='1.5em'">A</span>
+            <span class="btn" onclick="document.getElementById('text').style.fontSize='2em'">A</span>
+        </div>
+    </div>
+
+    <div id="color-changing-buttons">
+        <!-- random color changing button -->
+        <div class="random-colorchanging-container">
+            <button id="random-color-button">Random Color</button>
+        </div>
+
+
+        <!-- color selecting button html -->
+        <div class="colorchanging-container">
+            <span onclick="color(this)" class="color clr1"></span>
+            <span onclick="color(this)" class="color clr2"></span>
+            <span onclick="color(this)" class="color clr3"></span>
+            <span onclick="color(this)" class="color clr4"></span>
+        </div> 
+    </div> 
+    
+    <!-- thumbnail images -->
+    <div id="div3">
+        <img class="myImg" id="img1" src="img/student4/tumbnail/img1.jpg" alt="image" data-description="Sigiriya (Lion Rock Sinhala: සීගිරිය, Tamil:/சிங்ககிரி, pronounced see-gi-ri-ya) is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. It is a site of historical and archaeological significance that is dominated by a massive column of granite rock approximately 180 m (590 ft) high.">
+        <img class="myImg" id="img2" src="img/student4//tumbnail/img2.jpg" alt="image" data-description="Adam's Peak is a 2,243 m (7,359 ft) tall conical sacred mountain located in central Sri Lanka. It is well known for the 'Śrī Pāda' (Sinhala: ශ්‍රී පාද), a (1.8 m) rock formation near the summit. In Buddhist tradition the print is held to be the footprint of the Buddha, in Hindu tradition that of Hanuman or Shiva and in some Islamic and Christian traditions that of Adam.">
+        <img class="myImg" id="img3" src="img/student4//tumbnail/img3.jpg" alt="image" data-description="The Nine Arches Bridge (Sinhala: ආරුක්කු නමයේ පාලම,) is a viaduct bridge in Sri Lanka. It is one of the best examples of colonial-era railway construction in the country. It is located in Demodara. The surrounding area has seen a steady increase of tourism due to the bridge's architectural ingenuity and the profuse greenery in the nearby hillsides.">
+        <img class="myImg" id="img4" src="img/student4//tumbnail/img4.jpg" alt="image" data-description="World's End is located within the Horton Plains National Park in Nuwara Eliya District, Sri Lanka. It is a sheer cliff, with a drop of about 4,000 feet. It is a key tourist attraction in the Nuwara Eliya District and the country at large. 1 km away from the main cliff is a smaller cliff with a 1,000 feet (300 m) drop, colloquially known as Mini World's End.">
+        <img class="myImg" id="img5" src="img/student4//tumbnail/img5.jpg" alt="image" data-description="Sinharaja Forest is a forest reserve and a biodiversity hotspot in Sri Lanka. It is of international significance and has been designated a Biosphere Reserve and World Heritage Site by UNESCO. According to International Union for Conservation of Nature (IUCN), More than 60% of the trees are endemic and many of them are considered rare in Sinharaja Forest. ">
+        <img class="myImg" id="img6" src="img/student4//tumbnail/img6.jpg" alt="image" data-description="The Ruwanweli Maha Seya (lit. 'the Great Thupa'), is a stupa (a hemispherical structure containing relics) in Anuradhapura, Sri Lanka. Two quarts or one Dona of the Buddha's relics are enshrined in the stupa, making it the largest collection of his relics anywhere. It was built by Sinhalese King Dutugemunu in c. 140 B.C., who became king of Sri Lanka after a war in which the Chola King Elāra was defeated.">
+        <img class="myImg" id="img7" src="img/student4//tumbnail/img7.jpg" alt="image" data-description="Polonnaruwa, (Sinhala: පොළොන්නරුව, Tamil: பொலன்னறுவை) also referred as Pulathisipura and Vijayarajapura in ancient times, is the main town of Polonnaruwa District in North Central Province, Sri Lanka. The modern town of Polonnaruwa is also known as New Town, and the other part of Polonnaruwa remains as the royal ancient city of the Kingdom of Polonnaruwa.">
+        <img class="myImg" id="img8" src="img/student4//tumbnail/img8.jpg" alt="image" data-description="Galle Fort (Sinhala: ගාලු කොටුව Galu Kotuwa; Tamil: காலிக் கோட்டை ), in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese, then extensively fortified by the Dutch during the 17th century from 1649 onwards. It is a historical, archaeological and architectural heritage monument. which even after more than 432 years maintains a polished appearance.">
+        <img class="myImg" id="img9" src="img/student4//tumbnail/img9.jpg" alt="image" data-description="Ravana Falls (Sinhala: රාවණා ඇල්ල, romanized: Ravana Ella) is a popular sightseeing attraction in Sri Lanka. It currently ranks as one of the widest falls in the country. This waterfall measures approximately 25 m (82 ft) in height and cascades from an oval-shaped concave rock outcrop. During the local wet season, the waterfall turns into what is said to resemble an areca flower with withering petals.">    
+    </div>
+
+
+    <!-- large image content when clicking thumbnail -->
+    <div class="content" id="text">
+        <div id="modal">
+            <span class="close-button">&times;</span>
+            <span class="extra-page"><button id="extra-content" onclick="window.location.href = 'article.html'">More Info</button></span>
+            <img id="modal-image" src="modal-image" alt="Large Image">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="col-footer">
+            <h3>About Us</h3>
+            <p>Welcome to our website! We are passionate about helping travelers discover the beauty and culture of Sri Lanka. Our team of travel experts has years of experience in the industry, and we work tirelessly to curate the best travel experiences for our customers. Whether you're a solo traveler or planning a family vacation, we're here to make your travel dreams a reality.</p>
+          </div>
+          <div class="col-footer">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="shop.html">Shop</a>
+              </li>
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-footer">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka
+              </li>
+              <li>
+                <i class="fas fa-phone"></i> 555-555-5555
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i> info@visitsrilanka.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr>
+          <p>Created By <a href="isuru-gimhan.html">Isuru Gimhan</a> | © 2023 All Rights Reserved by Team R6</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/student4/gallery.js"></script>
+</body>
+</html>
